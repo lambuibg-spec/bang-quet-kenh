@@ -1,0 +1,34 @@
+name: pages
+on:
+  push:
+    branches: [main]
+  workflow_dispatch: {}
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+concurrency:
+  group: pages
+  cancel-in-progress: true
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.d.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: |
+            *.html
+            ver.json
+          sparse-checkout-cone-mode: false
+      - run: mkdir _site && cp *.html ver.json _site/ && touch _site/.nojekyll
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+      # 23/11/2026: deploy hoi goi trang 0,4 giay sau khi tai xong -> GitHub chua kip ghi nhan ("Found 0 artifact(s)"),
+      #   4/5 luot dung hong, trang cong khai dung o ban cu du may bao "da day". Cho 10 giay roi moi trien khai.
+      - run: sleep 10
+      - id: d
+        uses: actions/deploy-pages@v4

@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="vi"><head><meta charset="utf-8">
+<meta name="robots" content="noindex">
+<meta name="referrer" content="no-referrer">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Nhóm 40K Hằng Ngày</title>
+<style>
+:root{--nen:#f6f7f9;--the:#fff;--vien:#e3e6ea;--chu:#1a1d21;--mo:#6b7280;--xanh:#0f7b6c;--do:#c0392b;--cam:#d97706;--xanhduong:#1d4ed8}
+*{box-sizing:border-box}
+body{margin:0;background:var(--nen);color:var(--chu);font:14px/1.5 -apple-system,"Segoe UI",Roboto,Arial,sans-serif}
+.bao{max-width:1600px;margin:0 auto;padding:16px}
+h1{font-size:22px;margin:0 0 4px;text-align:center;letter-spacing:.03em}
+.mo{color:var(--mo);font-size:13px}
+.dau{text-align:center;margin-bottom:14px}
+.muc{display:flex;gap:8px;flex-wrap:wrap;justify-content:center;margin:10px 0 0}
+.muc a{padding:7px 13px;border:1px solid var(--vien);background:#fff;border-radius:7px;font-size:12.5px;font-weight:600;color:var(--chu);text-decoration:none}
+.muc a.bat{background:var(--chu);color:#fff;border-color:var(--chu)}
+.the{background:var(--the);border:1px solid var(--vien);border-radius:10px;padding:16px;margin-bottom:16px}
+a{color:var(--xanhduong);text-decoration:none}a:hover{text-decoration:underline}
+.loc{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-bottom:12px}
+.loc input,.loc select{padding:8px 11px;border:1px solid var(--vien);border-radius:7px;font:inherit;background:#fff;max-width:100%}
+.loc input{flex:1;min-width:180px}
+.loc button{padding:7px 12px;border:1px solid var(--vien);background:#fff;border-radius:7px;font:inherit;font-size:12.5px;cursor:pointer}
+.loc button.bat{background:var(--chu);color:#fff;border-color:var(--chu)}
+.loc button b{font-weight:800}
+.dem{font-size:12.5px;color:var(--mo)}
+.luoi{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:12px}
+.sp{border:1px solid var(--vien);border-radius:9px;overflow:hidden;background:#fff;display:flex;flex-direction:column;position:relative}
+.sp .anh{width:100%;aspect-ratio:1;object-fit:cover;background:#f0f2f4;display:block}
+.sp .trong{width:100%;aspect-ratio:1;background:#f0f2f4;display:flex;align-items:center;justify-content:center;color:#9ca3af;font-size:12px}
+.sp .th{padding:9px 10px;flex:1;display:flex;flex-direction:column;gap:5px}
+.sp .ten{font-size:12.5px;font-weight:600;line-height:1.35;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.sp .ng{font-size:11px;color:var(--mo)}
+.sp .so{display:flex;gap:9px;flex-wrap:wrap;font-size:11.5px;color:var(--mo);padding-top:5px;border-top:1px solid #f0f2f4}
+.sp .so b{color:var(--chu)}
+.nhan{position:absolute;left:8px;top:8px;background:var(--do);color:#fff;font-size:11px;font-weight:800;padding:2px 8px;border-radius:5px}
+.hg{position:absolute;right:8px;top:8px;background:rgba(26,29,33,.82);color:#fff;font-size:11px;font-weight:700;padding:2px 8px;border-radius:5px}
+.vw{font-weight:800;font-size:20px;line-height:1.1;padding:4px 10px;border-radius:8px;background:#16a34a;color:#fff;display:inline-block}
+.vw small{font-weight:600;font-size:11px;margin-left:6px}
+.vd{font-size:11.5px;display:flex;justify-content:space-between;gap:6px}
+.vd span{color:var(--mo);white-space:nowrap}
+.len{color:#16a34a;font-weight:700}.xuong{color:var(--do);font-weight:700}
+.them{display:block;width:100%;margin-top:14px;padding:10px;border:1px solid var(--vien);background:#fff;border-radius:8px;font:inherit;cursor:pointer}
+.cuon{overflow-x:auto}
+table{border-collapse:collapse;width:100%;font-size:13px}
+th,td{padding:7px 10px;border-bottom:1px solid #eef0f2;text-align:left;white-space:nowrap}
+th{font-size:11.5px;text-transform:uppercase;letter-spacing:.03em;color:var(--mo)}
+td.s,th.s{text-align:right;font-variant-numeric:tabular-nums}
+.o4{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;margin-bottom:14px}
+.o4 div{background:#f6f7f9;border-radius:8px;padding:10px 12px}
+.o4 b{display:block;font-size:20px;line-height:1.2}
+.o4 span{font-size:12px;color:var(--mo)}
+.ghichu{font-size:12px;color:var(--mo);margin-top:12px;line-height:1.5}
+.loi{padding:14px;color:var(--do);font-weight:600}
+.danhsach{display:flex;flex-direction:column;border:1px solid var(--vien);border-radius:9px;overflow:hidden;background:#fff}
+.dsd,.dsd0{display:grid;grid-template-columns:70px 64px minmax(0,1fr) 190px 110px 100px;gap:12px;align-items:center;padding:8px 12px;border-bottom:1px solid #eef0f2}
+.dsd:last-child{border-bottom:0}
+.dsd:hover{background:#f9fafb}
+.dsd0{background:#f6f7f9;font-size:11.5px;text-transform:uppercase;letter-spacing:.03em;color:var(--mo);padding:7px 12px}
+.dsh{text-align:center;line-height:1.2}.dsh b{font-size:18px}.dsh small{display:block;font-size:10.5px;color:var(--mo)}
+.dsd .dsa{width:64px;height:64px;object-fit:cover;border-radius:7px;background:#f0f2f4;display:block}
+.dsd .dst2 .ten{font-size:13px;font-weight:600;line-height:1.35;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.dsd .dst2 .ng{font-size:11.5px;color:var(--mo);margin-top:2px}
+.dsd .nhan{position:static;display:inline-block;margin-right:6px;vertical-align:1px}
+.dsd .dsn{font-size:12.5px;font-variant-numeric:tabular-nums}
+.dsd .dsl{font-size:12.5px;text-align:right}
+.loc .nhom{font-size:12px;color:var(--mo);margin-left:6px}
+.dsd.k4,.dsd0.k4{grid-template-columns:70px 64px minmax(0,1fr) 100px 150px minmax(0,230px) 100px}
+.dsd .vd2{font-size:12px;line-height:1.5;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.dsd .vd2 span{color:var(--mo)}
+@media(max-width:760px){.dsd.k4{grid-template-columns:54px 56px minmax(0,1fr)}.dsd .vd2{white-space:normal}}
+@media(max-width:760px){
+  .dsd0{display:none}
+  .dsd{grid-template-columns:54px 56px minmax(0,1fr);gap:8px}
+  .dsd .dsa{width:56px;height:56px}
+  .dsd .dsn,.dsd .dsl{grid-column:3;text-align:left}
+}
+</style></head><body><div class="bao">
+<div class="dau"><h1>NHÓM KÊNH 40K — SẢN PHẨM ĐĂNG HẰNG NGÀY</h1>
+  <div class="mo" id="phu">đang tải…</div>
+  <div class="muc"><a href="index.html">Tìm sản phẩm win</a><a href="seller.html">Seller hằng ngày</a><a class="bat" href="nhom-40k.html">Nhóm 40K hằng ngày</a><a href="san-pham-win.html">Sản phẩm có video win</a></div></div>
+<div class="the">
+  <div class="o4" id="o4"></div>
+  <div class="loc" id="che">
+    <button data-c="ngay" class="bat">Theo ngày đăng</button>
+    <button data-c="sp">Tổng hợp sản phẩm</button>
+    <button data-c="nganh">Theo ngành</button>
+    <button data-c="kenh">Theo kênh</button>
+  </div>
+  <div class="loc" id="hopngay"></div>
+  <div class="loc" id="hoploc">
+    <select id="nganh" aria-label="Ngành hàng"></select>
+    <input id="ts" placeholder="tìm tên sản phẩm / kênh / mã...">
+    <span class="dem" id="dems"></span>
+  </div>
+  <div class="loc" id="hopdang">
+    <span class="nhom">Dạng:</span>
+    <button data-d="ds" class="bat">Danh sách</button>
+    <button data-d="the">Thẻ ảnh</button>
+    <span class="nhom">Thứ hạng (theo tổng view):</span>
+    <button data-h="0" class="bat">Tất cả</button>
+    <button data-h="10">Top 10</button>
+    <button data-h="20">Top 20</button>
+    <button data-h="50">Top 50</button>
+    <button data-h="100">Top 100</button>
+  </div>
+  <div class="luoi" id="luoi"></div>
+  <div class="cuon" id="bang"></div>
+  <button class="them" id="them">Xem thêm</button>
+  <div class="ghichu" id="ghichu"></div>
+</div>
+<script>
+const DL = 'https://raw.githubusercontent.com/lambuibg-spec/bang-quet-kenh/main/dl/';
+const so = n => (n||0).toLocaleString('vi-VN');
+const gon = n => n>=1e9 ? (n/1e9).toLocaleString('vi-VN',{maximumFractionDigits:1})+' tỷ' : n>=1e6 ? (n/1e6).toLocaleString('vi-VN',{maximumFractionDigits:1})+' tr'
+  : n>=1e4 ? Math.round(n/1e3).toLocaleString('vi-VN')+'k' : so(n);
+const esc = s => String(s==null?'':s).replace(/[&<>"]/g, m => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[m]));
+const tenNgay = n => n ? n.slice(8,10)+'/'+n.slice(5,7) : '';
+const nho = (k, v) => { try { if (v===undefined) return localStorage.getItem(k); localStorage.setItem(k, v); } catch(e) { return null; } };
+async function tai(duong){
+  const r = await fetch(DL + duong + '?t=' + Math.floor(Date.now()/300000), {cache:'no-store'});
+  if (!r.ok) throw new Error('không tải được ' + duong + ' (' + r.status + ')');
+  return r.json();
+}
+const baoLoi = e => { document.getElementById('luoi').innerHTML = '<div class="loi">Chưa tải được dữ liệu: '+esc(e.message||e)+'</div>'; };
+
+let CM = null, TONG = null, NG = {}, che = 'ngay', ngay = '', ng = '', hien = 60;
+let dang = nho('k4_dang') === 'the' ? 'the' : 'ds', hangMax = parseInt(nho('k4_hang') || '0', 10) || 0;
+const linkV = (k, v) => `https://www.tiktok.com/@${encodeURIComponent(k)}/video/${v}`;
+// danh sách: mỗi dòng một sản phẩm, hạng = thứ tự theo view trong phần đang xem (sau khi lọc ngành / tìm kiếm)
+const dongDS = (x, h, so_vd, vd) => `<div class="dsd k4">
+  <div class="dsh"><b>#${h}</b></div>
+  ${x[2]?`<img class="dsa" src="${esc(x[2])}" loading="lazy" alt="">`:'<div class="dsa"></div>'}
+  <div class="dst2"><div class="ten">${esc(x[1])||'<span style="color:#9ca3af">chưa có tên</span>'}</div><div class="ng">${esc(x[3])}</div></div>
+  <div class="dsn"><span class="vw" style="font-size:15px;padding:3px 8px">${gon(x[4])}</span></div>
+  <div class="dsn">${so_vd}</div>
+  <div class="dsn vd2">${vd}</div>
+  <div class="dsl"><a href="https://shop.tiktok.com/vn/pdp/${esc(x[0])}" target="_blank" rel="noopener">mở sản phẩm</a></div></div>`;
+const dauDS = '<div class="dsd0 k4"><div style="text-align:center">Hạng</div><div></div><div>Sản phẩm / ngành</div><div>Tổng view</div><div>Video · kênh</div><div>Video mạnh nhất</div><div style="text-align:right">Link</div></div>';
+function batNut(sel, thuoc, gt){ document.querySelectorAll(sel).forEach(b => b.classList.toggle('bat', b.dataset[thuoc] === String(gt))); }
+const the = (x, phu, vds) => `
+  <div class="sp">${x[2]?`<img class="anh" src="${esc(x[2])}" loading="lazy" alt="">`:'<div class="trong">chưa có ảnh</div>'}
+    <div class="th"><div class="ten">${esc(x[1])||'<span style="color:#9ca3af">chưa có tên</span>'}</div>
+      <div class="ng">${esc(x[3])}</div>
+      <div><span class="vw">${gon(x[4])}<small>view</small></span></div>
+      <div class="so">${phu}</div>
+      ${vds}
+      <div class="ng"><a href="https://shop.tiktok.com/vn/pdp/${esc(x[0])}" target="_blank" rel="noopener">mở sản phẩm</a></div>
+    </div></div>`;
+function chonNganh(ds){
+  const dem = {}; ds.forEach(x => dem[x[3]] = (dem[x[3]]||0)+1);
+  const k = Object.keys(dem).sort((a,b) => dem[b]-dem[a]);
+  if (ng && !dem[ng]) ng = '';
+  nganh.innerHTML = `<option value="">Mọi ngành — ${so(ds.length)} sản phẩm</option>` +
+    k.map(n => `<option value="${esc(n)}" ${n===ng?'selected':''}>${esc(n)} — ${so(dem[n])}</option>`).join('');
+}
+async function ve(){
+  document.querySelectorAll('#che button').forEach(x => x.classList.toggle('bat', x.dataset.c===che));
+  hopngay.style.display = che==='ngay' ? 'flex' : 'none';
+  hoploc.style.display = (che==='ngay'||che==='sp') ? 'flex' : 'none';
+  hopdang.style.display = (che==='ngay'||che==='sp') ? 'flex' : 'none';
+  if (che!=='ngay' && che!=='sp') luoi.className = 'luoi';
+  luoi.innerHTML = ''; bang.innerHTML = ''; them.style.display = 'none';
+  const q = ts.value.trim().toLowerCase();
+  try {
+    if (che==='ngay'){
+      hopngay.innerHTML = CM.ngay.map(n => `<button data-n="${n[0]}" class="${n[0]===ngay?'bat':''}">${tenNgay(n[0])} · <b>${so(n[2])}</b> mã · ${gon(n[4])} view</button>`).join('');
+      if (!NG[ngay]) { luoi.innerHTML = '<div class="dem">đang tải…</div>'; NG[ngay] = (await tai('k40/d/'+ngay+'.json')).sp; }
+      const ds = NG[ngay]; chonNganh(ds);
+      const r = ds.filter(x => (!ng || x[3]===ng) && (!q || x[1].toLowerCase().includes(q) || x[0].includes(q) || x[5].some(v => v[1].toLowerCase().includes(q))));
+      const rt = hangMax ? r.slice(0, hangMax) : r;
+      dems.textContent = so(rt.length)+' / '+so(ds.length)+' sản phẩm đăng ngày '+tenNgay(ngay)+', view cao xếp trước';
+      luoi.className = dang==='ds' ? 'danhsach' : 'luoi';
+      luoi.innerHTML = (dang==='ds' && rt.length ? dauDS : '') + rt.slice(0, hien).map((x, i) => dang==='ds' ? dongDS(x, i+1,
+        `<b>${so(x[5].length)}</b> video · <b>${so(new Set(x[5].map(v=>v[1])).size)}</b> kênh`,
+        x[5].slice(0,2).map(v => `<a href="${linkV(v[1],v[0])}" target="_blank" rel="noopener">@${esc(v[1])}</a> <span>${gon(v[2])}</span>`).join('<br>')
+          + (x[5].length>2?` <span>+${x[5].length-2} video</span>`:'')) : the(x,
+        `<span><b>${so(x[5].length)}</b> video</span><span><b>${so(new Set(x[5].map(v=>v[1])).size)}</b> kênh</span>`,
+        x[5].slice(0,4).map(v => `<div class="vd"><a href="${linkV(v[1],v[0])}" target="_blank" rel="noopener">@${esc(v[1])}</a><span>${gon(v[2])} view</span></div>`).join('')
+          + (x[5].length>4?`<div class="ng">và ${x[5].length-4} video khác</div>`:''))).join('') || '<div class="dem">không có sản phẩm nào khớp</div>';
+      them.style.display = rt.length > hien ? 'block' : 'none'; them.textContent = 'Xem thêm (' + so(rt.length-hien) + ' sản phẩm nữa)';
+      return;
+    }
+    if (!TONG) { luoi.innerHTML = '<div class="dem">đang tải…</div>'; TONG = await tai('k40/tong.json'); luoi.innerHTML = ''; }
+    if (che==='sp'){
+      const ds = TONG.sp; chonNganh(ds);
+      const r = ds.filter(x => (!ng || x[3]===ng) && (!q || x[1].toLowerCase().includes(q) || x[0].includes(q)));
+      const rt = hangMax ? r.slice(0, hangMax) : r;
+      dems.textContent = so(rt.length)+' / '+so(TONG.so_sp)+' sản phẩm trong '+CM.so_ngay+' ngày, tổng view cao xếp trước';
+      luoi.className = dang==='ds' ? 'danhsach' : 'luoi';
+      luoi.innerHTML = (dang==='ds' && rt.length ? dauDS : '') + rt.slice(0, hien).map((x, i) => dang==='ds' ? dongDS(x, i+1,
+        `<b>${so(x[5])}</b> video · <b>${so(x[6])}</b> kênh<br><span>${tenNgay(x[7])}${x[8]!==x[7]?'–'+tenNgay(x[8]):''}</span>`,
+        x[9][1]?`<a href="${linkV(x[9][2],x[9][1])}" target="_blank" rel="noopener">@${esc(x[9][2])}</a> <span>${gon(x[9][0])}</span>`:'') : the(x,
+        `<span><b>${so(x[5])}</b> video</span><span><b>${so(x[6])}</b> kênh</span><span>${tenNgay(x[7])}${x[8]!==x[7]?'–'+tenNgay(x[8]):''}</span>`,
+        x[9][1]?`<div class="vd"><a href="${linkV(x[9][2],x[9][1])}" target="_blank" rel="noopener">video mạnh nhất @${esc(x[9][2])}</a><span>${gon(x[9][0])} view</span></div>`:'')).join('')
+        || '<div class="dem">không có sản phẩm nào khớp</div>';
+      them.style.display = rt.length > hien ? 'block' : 'none'; them.textContent = 'Xem thêm (' + so(rt.length-hien) + ' sản phẩm nữa)';
+    } else if (che==='nganh'){
+      bang.innerHTML = '<table><tr><th>Ngành hàng</th><th class="s">Sản phẩm</th><th class="s">Video</th><th class="s">Tổng view</th></tr>' +
+        TONG.nganh.map(x => `<tr><td><a href="#" data-ng="${esc(x[0])}">${esc(x[0])}</a></td><td class="s">${so(x[1])}</td><td class="s">${so(x[2])}</td><td class="s">${so(x[3])}</td></tr>`).join('') + '</table>';
+    } else {
+      bang.innerHTML = '<table><tr><th>Kênh</th><th class="s">Đơn tháng 10</th><th class="s">Video có mã</th><th class="s">Sản phẩm</th><th class="s">Tổng view</th></tr>' +
+        TONG.kenh.map(x => `<tr><td><a href="https://www.tiktok.com/@${encodeURIComponent(x[0])}" target="_blank" rel="noopener">@${esc(x[0])}</a></td><td class="s">${x[1]?so(x[1]):'—'}</td><td class="s">${so(x[2])}</td><td class="s">${so(x[3])}</td><td class="s">${so(x[4])}</td></tr>`).join('') + '</table>';
+    }
+  } catch(e) { baoLoi(e); }
+}
+document.getElementById('che').onclick = e => { const b = e.target.closest('button'); if (!b) return; che = b.dataset.c; hien = 60; ve(); };
+hopngay.onclick = e => { const b = e.target.closest('button'); if (!b) return; ngay = b.dataset.n; hien = 60; ve(); };
+bang.onclick = e => { const a = e.target.closest('a[data-ng]'); if (!a) return; e.preventDefault(); ng = a.dataset.ng; che = 'sp'; hien = 60; ve(); };
+nganh.onchange = () => { ng = nganh.value; hien = 60; ve(); };
+ts.oninput = () => { hien = 60; ve(); };
+them.onclick = () => { hien += 240; ve(); };
+document.querySelectorAll('button[data-d]').forEach(b => b.onclick = () => { dang = b.dataset.d; nho('k4_dang', dang); batNut('button[data-d]', 'd', dang); hien = 60; ve(); });
+document.querySelectorAll('button[data-h]').forEach(b => b.onclick = () => { hangMax = parseInt(b.dataset.h, 10) || 0; nho('k4_hang', hangMax); batNut('button[data-h]', 'h', hangMax); hien = 60; ve(); });
+batNut('button[data-d]', 'd', dang); batNut('button[data-h]', 'h', hangMax);
+tai('k40/ngay.json').then(j => { CM = j; ngay = (j.ngay[0]||[''])[0];
+  phu.textContent = 'cập nhật ' + j.cap_nhat + ' · ' + j.so_ngay + ' ngày đăng gần nhất';
+  o4.innerHTML = `<div><b>${so(j.so_kenh_nhom)}</b><span>kênh trong nhóm</span></div><div><b>${so(j.so_kenh_co_video)}</b><span>kênh có video ra mã</span></div>
+    <div><b>${so(j.so_video)}</b><span>video đã bóc</span></div><div><b>${so(j.so_ma)}</b><span>sản phẩm khác nhau</span></div>`;
+  ghichu.textContent = 'Nhóm 40K = các kênh bán bằng video nhiều đơn nhất trong 5 ngành nhà mình (danh sách lấy từ TikTok Seller, hiện ' + so(j.so_kenh_nhom) +
+    ' kênh). Trang chỉ có video đã đạt từ 10.000 view trong 14 ngày và đã bóc ra mã sản phẩm; ' + so(j.video_khong_ma) +
+    ' video khác chưa bóc ra mã nên không hiện. View là số chụp lúc máy quét, không phải view hiện tại. Ngành lấy theo trang sản phẩm.';
+  if (ngay) ve(); else luoi.innerHTML = '<div class="dem">chưa có video nào</div>'; }).catch(e => { phu.textContent = ''; baoLoi(e); });
+</script></div></body></html>

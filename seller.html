@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="vi"><head><meta charset="utf-8">
+<meta name="robots" content="noindex">
+<meta name="referrer" content="no-referrer">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Seller Hằng Ngày</title>
+<style>
+:root{--nen:#f6f7f9;--the:#fff;--vien:#e3e6ea;--chu:#1a1d21;--mo:#6b7280;--xanh:#0f7b6c;--do:#c0392b;--cam:#d97706;--xanhduong:#1d4ed8}
+*{box-sizing:border-box}
+body{margin:0;background:var(--nen);color:var(--chu);font:14px/1.5 -apple-system,"Segoe UI",Roboto,Arial,sans-serif}
+.bao{max-width:1600px;margin:0 auto;padding:16px}
+h1{font-size:22px;margin:0 0 4px;text-align:center;letter-spacing:.03em}
+.mo{color:var(--mo);font-size:13px}
+.dau{text-align:center;margin-bottom:14px}
+.muc{display:flex;gap:8px;flex-wrap:wrap;justify-content:center;margin:10px 0 0}
+.muc a{padding:7px 13px;border:1px solid var(--vien);background:#fff;border-radius:7px;font-size:12.5px;font-weight:600;color:var(--chu);text-decoration:none}
+.muc a.bat{background:var(--chu);color:#fff;border-color:var(--chu)}
+.the{background:var(--the);border:1px solid var(--vien);border-radius:10px;padding:16px;margin-bottom:16px}
+a{color:var(--xanhduong);text-decoration:none}a:hover{text-decoration:underline}
+.loc{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-bottom:12px}
+.loc input,.loc select{padding:8px 11px;border:1px solid var(--vien);border-radius:7px;font:inherit;background:#fff;max-width:100%}
+.loc input{flex:1;min-width:180px}
+.loc button{padding:7px 12px;border:1px solid var(--vien);background:#fff;border-radius:7px;font:inherit;font-size:12.5px;cursor:pointer}
+.loc button.bat{background:var(--chu);color:#fff;border-color:var(--chu)}
+.loc button b{font-weight:800}
+.dem{font-size:12.5px;color:var(--mo)}
+.luoi{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:12px}
+.sp{border:1px solid var(--vien);border-radius:9px;overflow:hidden;background:#fff;display:flex;flex-direction:column;position:relative}
+.sp .anh{width:100%;aspect-ratio:1;object-fit:cover;background:#f0f2f4;display:block}
+.sp .trong{width:100%;aspect-ratio:1;background:#f0f2f4;display:flex;align-items:center;justify-content:center;color:#9ca3af;font-size:12px}
+.sp .th{padding:9px 10px;flex:1;display:flex;flex-direction:column;gap:5px}
+.sp .ten{font-size:12.5px;font-weight:600;line-height:1.35;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.sp .ng{font-size:11px;color:var(--mo)}
+.sp .so{display:flex;gap:9px;flex-wrap:wrap;font-size:11.5px;color:var(--mo);padding-top:5px;border-top:1px solid #f0f2f4}
+.sp .so b{color:var(--chu)}
+.nhan{position:absolute;left:8px;top:8px;background:var(--do);color:#fff;font-size:11px;font-weight:800;padding:2px 8px;border-radius:5px}
+.hg{position:absolute;right:8px;top:8px;background:rgba(26,29,33,.82);color:#fff;font-size:11px;font-weight:700;padding:2px 8px;border-radius:5px}
+.vw{font-weight:800;font-size:20px;line-height:1.1;padding:4px 10px;border-radius:8px;background:#16a34a;color:#fff;display:inline-block}
+.vw small{font-weight:600;font-size:11px;margin-left:6px}
+.vd{font-size:11.5px;display:flex;justify-content:space-between;gap:6px}
+.vd span{color:var(--mo);white-space:nowrap}
+.len{color:#16a34a;font-weight:700}.xuong{color:var(--do);font-weight:700}
+.them{display:block;width:100%;margin-top:14px;padding:10px;border:1px solid var(--vien);background:#fff;border-radius:8px;font:inherit;cursor:pointer}
+.cuon{overflow-x:auto}
+table{border-collapse:collapse;width:100%;font-size:13px}
+th,td{padding:7px 10px;border-bottom:1px solid #eef0f2;text-align:left;white-space:nowrap}
+th{font-size:11.5px;text-transform:uppercase;letter-spacing:.03em;color:var(--mo)}
+td.s,th.s{text-align:right;font-variant-numeric:tabular-nums}
+.o4{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;margin-bottom:14px}
+.o4 div{background:#f6f7f9;border-radius:8px;padding:10px 12px}
+.o4 b{display:block;font-size:20px;line-height:1.2}
+.o4 span{font-size:12px;color:var(--mo)}
+.ghichu{font-size:12px;color:var(--mo);margin-top:12px;line-height:1.5}
+.loi{padding:14px;color:var(--do);font-weight:600}
+.danhsach{display:flex;flex-direction:column;border:1px solid var(--vien);border-radius:9px;overflow:hidden;background:#fff}
+.dsd,.dsd0{display:grid;grid-template-columns:70px 64px minmax(0,1fr) 190px 110px 100px;gap:12px;align-items:center;padding:8px 12px;border-bottom:1px solid #eef0f2}
+.dsd:last-child{border-bottom:0}
+.dsd:hover{background:#f9fafb}
+.dsd0{background:#f6f7f9;font-size:11.5px;text-transform:uppercase;letter-spacing:.03em;color:var(--mo);padding:7px 12px}
+.dsh{text-align:center;line-height:1.2}.dsh b{font-size:18px}.dsh small{display:block;font-size:10.5px;color:var(--mo)}
+.dsd .dsa{width:64px;height:64px;object-fit:cover;border-radius:7px;background:#f0f2f4;display:block}
+.dsd .dst2 .ten{font-size:13px;font-weight:600;line-height:1.35;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.dsd .dst2 .ng{font-size:11.5px;color:var(--mo);margin-top:2px}
+.dsd .nhan{position:static;display:inline-block;margin-right:6px;vertical-align:1px}
+.dsd .dsn{font-size:12.5px;font-variant-numeric:tabular-nums}
+.dsd .dsl{font-size:12.5px;text-align:right}
+.loc .nhom{font-size:12px;color:var(--mo);margin-left:6px}
+.dsd.k4,.dsd0.k4{grid-template-columns:70px 64px minmax(0,1fr) 100px 150px minmax(0,230px) 100px}
+.dsd .vd2{font-size:12px;line-height:1.5;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.dsd .vd2 span{color:var(--mo)}
+@media(max-width:760px){.dsd.k4{grid-template-columns:54px 56px minmax(0,1fr)}.dsd .vd2{white-space:normal}}
+@media(max-width:760px){
+  .dsd0{display:none}
+  .dsd{grid-template-columns:54px 56px minmax(0,1fr);gap:8px}
+  .dsd .dsa{width:56px;height:56px}
+  .dsd .dsn,.dsd .dsl{grid-column:3;text-align:left}
+}
+</style></head><body><div class="bao">
+<div class="dau"><h1>QUÉT TIKTOK SELLER HẰNG NGÀY</h1>
+  <div class="mo" id="phu">đang tải…</div>
+  <div class="muc"><a href="index.html">Tìm sản phẩm win</a><a class="bat" href="seller.html">Seller hằng ngày</a><a href="nhom-40k.html">Nhóm 40K hằng ngày</a><a href="san-pham-win.html">Sản phẩm có video win</a></div></div>
+<div class="the">
+  <div class="loc" id="hopngay"></div>
+  <div class="loc">
+    <select id="nganh" aria-label="Ngành hàng"></select>
+    <button data-b="" class="bat">Cả hai bảng</button>
+    <button data-b="0">Bán chạy trên video</button>
+    <button data-b="1">Hàng mới về</button>
+    <button id="chimoi">Chỉ mã mới trong ngày</button>
+  </div>
+  <div class="loc">
+    <span class="nhom">Dạng:</span>
+    <button data-d="ds" class="bat">Danh sách</button>
+    <button data-d="the">Thẻ ảnh</button>
+    <span class="nhom">Thứ hạng:</span>
+    <button data-h="0" class="bat">Tất cả</button>
+    <button data-h="10">Top 10</button>
+    <button data-h="20">Top 20</button>
+    <button data-h="50">Top 50</button>
+    <button data-h="100">Top 100</button>
+  </div>
+  <div class="loc">
+    <input id="ts" placeholder="tìm tên sản phẩm / shop / mã...">
+    <select id="xep" aria-label="Sắp xếp">
+      <option value="hang">Xếp theo hạng</option><option value="ds">Doanh số cao trước</option><option value="len">Tăng hạng nhiều trước</option>
+    </select>
+    <span class="dem" id="dems"></span>
+  </div>
+  <div class="luoi" id="luoi"></div>
+  <button class="them" id="them">Xem thêm</button>
+  <div class="ghichu">Nguồn: TikTok Seller Compass, mỗi ngành tối đa 200 sản phẩm mỗi bảng. Compass ra số chậm khoảng 1–2 ngày.
+    Doanh số là khoảng ước tính trong ngày của Compass, đơn vị nghìn đô-la. «MỚI» = mã chưa từng có trong các ngày đã quét trước đó của cùng ngành.</div>
+</div>
+<script>
+const DL = 'https://raw.githubusercontent.com/lambuibg-spec/bang-quet-kenh/main/dl/';
+const so = n => (n||0).toLocaleString('vi-VN');
+const gon = n => n>=1e9 ? (n/1e9).toLocaleString('vi-VN',{maximumFractionDigits:1})+' tỷ' : n>=1e6 ? (n/1e6).toLocaleString('vi-VN',{maximumFractionDigits:1})+' tr'
+  : n>=1e4 ? Math.round(n/1e3).toLocaleString('vi-VN')+'k' : so(n);
+const esc = s => String(s==null?'':s).replace(/[&<>"]/g, m => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[m]));
+const tenNgay = n => n ? n.slice(8,10)+'/'+n.slice(5,7) : '';
+const nho = (k, v) => { try { if (v===undefined) return localStorage.getItem(k); localStorage.setItem(k, v); } catch(e) { return null; } };
+async function tai(duong){
+  const r = await fetch(DL + duong + '?t=' + Math.floor(Date.now()/300000), {cache:'no-store'});
+  if (!r.ok) throw new Error('không tải được ' + duong + ' (' + r.status + ')');
+  return r.json();
+}
+const baoLoi = e => { document.getElementById('luoi').innerHTML = '<div class="loi">Chưa tải được dữ liệu: '+esc(e.message||e)+'</div>'; };
+
+let CM = null, ngay = '', c1 = nho('sl_c1') || '600001', bang = nho('sl_bang') || '', chiMoi = false, hien = 60, DU = null;
+let dang = nho('sl_dang') === 'the' ? 'the' : 'ds', hangMax = parseInt(nho('sl_hang') || '0', 10) || 0;
+function batNut(sel, thuoc, gt){ document.querySelectorAll(sel).forEach(b => b.classList.toggle('bat', b.dataset[thuoc] === String(gt))); }
+function veNgay(){
+  hopngay.innerHTML = CM.ngay.map(n => { const t = CM.nganh[n].reduce((a,x)=>[a[0]+x[2],a[1]+x[3]],[0,0]);
+    return `<button data-n="${n}" class="${n===ngay?'bat':''}">${tenNgay(n)} · <b>${so(t[0])}</b> mã${t[1]?` · ${so(t[1])} mới`:''}</button>`; }).join('');
+  const ds = CM.nganh[ngay] || [];
+  if (!ds.some(x => x[0]===c1)) c1 = ds.length ? ds[0][0] : '';
+  nganh.innerHTML = ds.map(x => `<option value="${x[0]}" ${x[0]===c1?'selected':''}>${esc(x[1])} — ${so(x[2])} mã${x[3]?', '+so(x[3])+' mới':''}</option>`).join('');
+}
+async function nap(){
+  veNgay(); luoi.innerHTML = '<div class="dem">đang tải…</div>';
+  try { DU = await tai('seller/'+ngay+'/'+c1+'.json'); } catch(e) { DU = null; return baoLoi(e); }
+  ve();
+}
+function ve(){
+  if (!DU) return;
+  const q = ts.value.trim().toLowerCase();
+  // hạng dùng để lọc Top N: bảng đang chọn; «cả hai bảng» lấy hạng tốt nhất trong hai bảng
+  const rk = x => bang==='1' ? (x[4]||9999) : bang==='0' ? (x[3]||9999) : Math.min(x[3]||9999, x[4]||9999);
+  let r = DU.sp.filter(x => {
+    if (bang!=='' && x[2]!==2 && String(x[2])!==bang) return false;
+    if (chiMoi && !x[11]) return false;
+    if (hangMax && rk(x) > hangMax) return false;
+    return !q || x[1].toLowerCase().includes(q) || x[9].toLowerCase().includes(q) || x[0].includes(q);
+  });
+  const hg = x => bang==='1' ? (x[4]||999) : (x[3]||x[4]+1000||999);
+  if (xep.value==='ds') r.sort((a,b) => b[7]-a[7]);
+  else if (xep.value==='len') r.sort((a,b) => b[5]-a[5]);
+  else r.sort((a,b) => hg(a)-hg(b));
+  dems.textContent = so(r.length)+' / '+so(DU.sp.length)+' mã' + (DU.co_moc ? '' : ' · ngày đầu tiên có số nên chưa tính được mã mới');
+  luoi.className = dang==='ds' ? 'danhsach' : 'luoi';
+  if (dang==='ds') {
+    const doiH = x => x[5] ? `<span class="${x[5]>0?'len':'xuong'}">${x[5]>0?'▲':'▼'} ${Math.abs(x[5])} hạng</span>` : '<span class="mo">—</span>';
+    luoi.innerHTML = (r.length ? '<div class="dsd0"><div style="text-align:center">Hạng</div><div></div><div>Sản phẩm / shop</div><div>Doanh số (nghìn $)</div><div>Đổi hạng</div><div style="text-align:right">Link</div></div>' : '')
+      + r.slice(0, hien).map(x => {
+        const h1 = bang==='1' ? x[4] : (x[3] || x[4]), h2 = bang==='' && x[3] && x[4] ? 'mới về #'+x[4] : (bang==='' && !x[3] ? 'mới về' : '');
+        return `<div class="dsd">
+          <div class="dsh"><b>#${h1||'—'}</b>${h2?`<small>${h2}</small>`:''}</div>
+          ${x[10]?`<img class="dsa" src="${esc(x[10])}" loading="lazy" alt="">`:'<div class="dsa"></div>'}
+          <div class="dst2"><div class="ten">${x[11]?'<span class="nhan">MỚI</span>':''}${esc(x[1])}</div>
+            <div class="ng">${esc(x[9])}${x[8]?' · Giá '+esc(x[8]):''}</div></div>
+          <div class="dsn"><b>$${x[6].toLocaleString('vi-VN')}K–$${x[7].toLocaleString('vi-VN')}K</b></div>
+          <div class="dsn">${doiH(x)}</div>
+          <div class="dsl"><a href="https://shop.tiktok.com/vn/pdp/${esc(x[0])}" target="_blank" rel="noopener">mở sản phẩm</a></div>
+        </div>`; }).join('') || '<div class="dem" style="padding:14px">không có mã nào khớp</div>';
+  } else
+  luoi.innerHTML = r.slice(0, hien).map(x => `
+    <div class="sp">${x[11]?'<span class="nhan">MỚI</span>':''}
+      <span class="hg">${x[3]?'Video #'+x[3]:''}${x[3]&&x[4]?' · ':''}${x[4]?'Mới về #'+x[4]:''}</span>
+      ${x[10]?`<img class="anh" src="${esc(x[10])}" loading="lazy" alt="">`:'<div class="trong">chưa có ảnh</div>'}
+      <div class="th"><div class="ten">${esc(x[1])}</div>
+        <div class="ng">${esc(x[9])}</div>
+        <div class="so"><span>Doanh số <b>$${x[6].toLocaleString('vi-VN')}K–$${x[7].toLocaleString('vi-VN')}K</b></span>
+          ${x[5]?`<span class="${x[5]>0?'len':'xuong'}">${x[5]>0?'▲':'▼'} ${Math.abs(x[5])} hạng</span>`:''}</div>
+        ${x[8]?`<div class="ng">Giá ${esc(x[8])}</div>`:''}
+        <div class="ng"><a href="https://shop.tiktok.com/vn/pdp/${esc(x[0])}" target="_blank" rel="noopener">mở sản phẩm</a></div>
+      </div></div>`).join('') || '<div class="dem">không có mã nào khớp</div>';
+  them.style.display = r.length > hien ? 'block' : 'none';
+  them.textContent = 'Xem thêm (' + so(r.length - hien) + ' mã nữa)';
+}
+hopngay.onclick = e => { const b = e.target.closest('button'); if (!b) return; ngay = b.dataset.n; hien = 60; nap(); };
+nganh.onchange = () => { c1 = nganh.value; nho('sl_c1', c1); hien = 60; nap(); };
+document.querySelectorAll('button[data-b]').forEach(b => b.onclick = () => {
+  bang = b.dataset.b; nho('sl_bang', bang); batNut('button[data-b]', 'b', bang); hien = 60; ve(); });
+document.querySelectorAll('button[data-d]').forEach(b => b.onclick = () => { dang = b.dataset.d; nho('sl_dang', dang); batNut('button[data-d]', 'd', dang); hien = 60; ve(); });
+document.querySelectorAll('button[data-h]').forEach(b => b.onclick = () => { hangMax = parseInt(b.dataset.h, 10) || 0; nho('sl_hang', hangMax); batNut('button[data-h]', 'h', hangMax); hien = 60; ve(); });
+batNut('button[data-b]', 'b', bang); batNut('button[data-d]', 'd', dang); batNut('button[data-h]', 'h', hangMax);
+chimoi.onclick = () => { chiMoi = !chiMoi; chimoi.classList.toggle('bat', chiMoi); hien = 60; ve(); };
+ts.oninput = () => { hien = 60; ve(); };
+xep.onchange = ve;
+them.onclick = () => { hien += 240; ve(); };
+tai('seller/ngay.json').then(j => { CM = j; ngay = j.ngay[0] || '';
+  phu.textContent = j.ngay.length ? 'số mới nhất: ngày ' + tenNgay(ngay) + ' · quét lúc ' + j.cap_nhat + ' · ' + j.ngay.length + ' ngày gần nhất' : 'chưa có ngày nào';
+  if (ngay) nap(); }).catch(e => { phu.textContent = ''; baoLoi(e); });
+</script></div></body></html>
