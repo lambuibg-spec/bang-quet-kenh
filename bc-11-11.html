@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="vi"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Báo cáo quét mỗi ngày</title>
+<style>
+:root{--nen:#f6f7f9;--the:#fff;--vien:#e3e6ea;--chu:#1a1d21;--mo:#6b7280;
+      --xanh:#0f7b6c;--do:#c0392b;--cam:#d97706;--xanhduong:#1d4ed8}
+*{box-sizing:border-box}
+body{margin:0;background:var(--nen);color:var(--chu);
+     font:14px/1.5 -apple-system,"Segoe UI",Roboto,Arial,sans-serif}
+.bao{max-width:1100px;margin:0 auto;padding:16px}
+h1{font-size:22px;margin:0 0 4px;letter-spacing:.03em}
+.mo{color:var(--mo);font-size:13px}
+.the{background:var(--the);border:1px solid var(--vien);border-radius:10px;
+     padding:16px;margin-bottom:16px}
+a{color:var(--xanhduong);text-decoration:none}a:hover{text-decoration:underline}
+.loc{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin:12px 0}
+.loc a,.loc button{padding:7px 12px;border:1px solid var(--vien);background:#fff;
+     border-radius:7px;font:inherit;font-size:12.5px;cursor:pointer;color:var(--chu)}
+.loc a.bat{background:var(--chu);color:#fff;border-color:var(--chu)}
+.loc a:hover{text-decoration:none;border-color:var(--chu)}
+h3{font-size:13px;margin:18px 0 8px;text-transform:uppercase;letter-spacing:.05em;
+   color:var(--mo);font-weight:700;border-bottom:1px solid var(--vien);padding-bottom:6px}
+/* 10/11: tren dien thoai cot bi be dong, so don roi xuong dong duoi.
+   Giu nguyen cot bang white-space:pre, vuot ngang de xem het. */
+.khoi{overflow-x:auto;-webkit-overflow-scrolling:touch}
+.d{font:12.5px/1.65 ui-monospace,SFMono-Regular,Consolas,monospace;
+   white-space:pre}
+.d.xanh{color:var(--xanh);font-weight:600}
+.d.do{color:var(--do);font-weight:600}
+.d.cam{color:var(--cam)}
+.trong{color:var(--mo);padding:24px 0;text-align:center}
+.ghi{font-size:12.5px;color:var(--mo);margin-top:14px;border-top:1px solid var(--vien);
+     padding-top:10px}
+@media(max-width:620px){.bao{padding:10px}.d{font-size:12px}}
+</style></head><body><div class="bao">
+
+<h1>BÁO CÁO CÁC ĐỢT QUÉT</h1>
+<div class="mo">một nguồn duy nhất: <code>lam/_bao_cao_quet.py</code> ·
+  chốt mỗi ngày 22:30 · bản tác vụ 22:30 đã ghi ra file ·
+  <a href="index.html">← bảng tìm sản phẩm win</a></div>
+
+<div class="the">
+  <div class="loc"><a class="" href="bao-cao.html">15/11 (hôm nay)</a> <a class="" href="bc-14-11.html">14/11</a> <a class="" href="bc-13-11.html">13/11</a> <a class="" href="bc-12-11.html">12/11</a> <a class="bat" href="bc-11-11.html">11/11</a> <a class="" href="bc-10-11.html">10/11</a></div>
+  <div class="loc"><span class="mo">bản này do máy đẩy lên, làm mới cùng nhịp với bảng quét</span></div>
+  <div class="khoi"><div class="d ">&nbsp;</div>
+<h3>1. VONG QUET LIEN TUC (canh kenh -&gt; boc ma -&gt; tab 3)</h3>
+<div class="d ">   - boc ma      : 132 lo · 4905 video · 3538 video co ma · captcha 0 · trang vo 0</div>
+<div class="d ">   - len tab 3   : 639 ma MOI  (dong 17709 -&gt; 18459)</div>
+<div class="d ">   - 08:24:47 BUOC 2 canh kenh: bat dau</div>
+<div class="d ">   - 09:09:24 BUOC 2 canh kenh: bat dau</div>
+<div class="d ">   - 09:09:24 BUOC 2 canh kenh: rc=4 video moi ?</div>
+<div class="d ">   - 13:10:01 BUOC 2 canh kenh: bat dau</div>
+<div class="d ">   - 13:10:02 BUOC 2 canh kenh: rc=4 video moi ?</div>
+<div class="d ">   - 17:10:04 BUOC 2 canh kenh: bat dau</div>
+<div class="d ">   - 20:27:07 BUOC 2 canh kenh: rc=0 video moi 1370</div>
+<div class="d ">   - khoi dong   : 3 lan (08:24:47, 09:09:24, 10:25:01)</div>
+<div class="d ">&nbsp;</div>
+<h3>2. NGUOI CANH VONG QUET (10 phut/lan)</h3>
+<div class="d do">   ⛔ 11/11 10:25:09 ✔ DA BAT LAI vong quet  (vong quet da tung chet trong ngay)</div>
+<div class="d ">&nbsp;</div>
+<h3>3. TUNG DOT QUET THEO LICH</h3>
+<div class="d xanh">   ✔ 05:30  BOC SECUID KENH MOI  [lich: Ready · lan cuoi 11/11/2026 8:26:26 AM · ma tra ve 0]</div>
+<div class="d ">        XONG: lay duoc 0 / 51 kenh (51 hong, trong do 40 KENH KHOA/XOA) trong 9 phut</div>
+<div class="d xanh">   ✔ 07:12  KALODATA (quet + nap)  [lich: Ready · lan cuoi 11/11/2026 8:26:26 AM · ma tra ve 2147946720]  (Windows tu choi chay bu luc may bat sau gio hen — xem ket qua log)</div>
+<div class="d ">        quet: XONG: 429 ma MOI chua co trong file 32 (21 luot goi) · nap: se nap             : 112 ma · nap: DA GHI 112 ma vao 3. CHỌN MÃ (A17778:V17889)</div>
+<div class="d do">   ⛔ 10:05 · 22:05  CAP NHAT DANH SACH 40K  [lich: Ready · lan cuoi 11/11/2026 10:05:05 PM · ma tra ve 1]</div>
+<div class="d do">        [X] KHONG co tab nao dang o affiliate/creator. · [X] Làm đẹp &amp; chăm sóc cá nhân (13)      khong thay trong danh sach · [X] Điện thoại &amp; đồ điện tử (9)          khong thay trong danh sach · [X] Trang phục nữ &amp; đồ lót (7)           khong thay trong danh sach · [X] BO LOC CHUA DUNG: Hang muc san pham chua du 46 · Sap xep chua theo So mon ban ra · [.] file cu dang co 467 kenh — noi them, bo trung · [X] van that bai sau khi dat lai bo loc - KHONG loc tiep</div>
+<div class="d xanh">   ✔ 15:30 · 18:30 · 21:30  SELLER COMPASS  [lich: Ready · lan cuoi 11/11/2026 9:30:30 PM · ma tra ve 0]</div>
+<div class="d ">        KENH: 9541 luot — 4220 kenh khac nhau (4808 dong kenh x nganh) · NGAY 2026-11-10 — 2000 dong lay ve, 1940 ma khac nhau</div>
+<h3>4. NHOM KENH BAN NHIEU DON THANG 10 (lo 40K)</h3>
+<div class="d ">   danh sach         : 453 kenh (tong 24,076,655 don thang 10)</div>
+<div class="d ">    tuoi danh sach   : cap nhat lan cuoi 10:10 11/11 (12 gio truoc)</div>
+<div class="d ">   da tung canh      : 439 / 453</div>
+<div class="d ">   canh trong ngay 11/11: 439 kenh</div>
+<div class="d ">   DA RA MA          : 424 kenh — 35,845 ma SP rieng</div>
+<div class="d ">   chua ra ma        : 29 kenh</div>
+<div class="d ">   suc song (lan canh gan nhat): SONG 362 / YEU 36 / CHET 11 / chua ro 30</div>
+<div class="d do">   [X] kenh KHOA/XOA (TikTok 209002, khong lay duoc secUid): 14 kenh</div>
+<div class="d do">   [X] CHUA canh duoc lan nao: 14 kenh</div>
+<div class="d ">        - nguyen.sang86                  321,841 don (kenh khoa)</div>
+<div class="d ">        - moclan3399                      95,547 don (kenh khoa)</div>
+<div class="d ">        - thubinh_90                      87,169 don (kenh khoa)</div>
+<div class="d ">        - tientochong                     84,753 don (kenh khoa)</div>
+<div class="d ">        - khau.trang.gia.dinh.998         64,663 don (kenh khoa)</div>
+<div class="d ">        - toruc94                         51,818 don (kenh khoa)</div>
+<div class="d ">        - baobobo39                       49,709 don (kenh khoa)</div>
+<div class="d ">        - huongchiase74                   48,638 don (kenh khoa)</div>
+<div class="d ">        - thantamthao47                   43,717 don (kenh khoa)</div>
+<div class="d ">        - comxinhbikini                   40,016 don (kenh khoa)</div>
+<div class="d cam">   [...] con SONG ma chua ra ma (video da xep hang, cho boc): 9 kenh</div>
+<div class="d ">        - _thichdoctieuthuyet_            54,338 don</div>
+<div class="d ">        - gocnho1110                      51,356 don</div>
+<div class="d ">        - crazyteen.studio                43,754 don</div>
+<div class="d ">        - thehangchuan                    39,822 don</div>
+<div class="d ">        - nhadua247                       36,322 don</div>
+<div class="d ">        - yenxitrum2                      33,055 don</div>
+<div class="d ">        - gd.bedaudau                     32,498 don</div>
+<div class="d ">        - laman6868                       29,654 don</div>
+<div class="d ">&nbsp;</div>
+<div class="d ">&nbsp;</div>
+<h3>5. CAN NGUOI SOI</h3>
+<div class="d xanh">   ✔ vong quet dang chay (cong 18782 co chu)</div>
+<div class="d xanh">   ✔ khong co gi phai soi tay.</div></div>
+  <div class="ghi">Mã trả về coi là bình thường: <b>0</b>, <b>267009</b>,
+    <b>267011</b> (đang chạy) — khác thế là đỏ.
+    <b>kq=0</b> của Task Scheduler không có nghĩa là đợt quét đã chạy xong:
+    <code>.bat</code> từng không trả mã lỗi, nên phải xem kết quả thật ở đây.</div>
+</div>
+</div></body></html>
